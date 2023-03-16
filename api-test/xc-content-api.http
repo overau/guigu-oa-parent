@@ -3,4 +3,7 @@ GET {{local_host}}/admin/system/sysRole/findAll
 
 
 ### 条件分页
-GET {{local_host}}/admin/system/sysRole/1/1
+GET {{local_host}}/admin/system/sysRole/1/3
+
+### 根据id查询
+GET {{local_host}}/admin/system/sysRole/get/8
