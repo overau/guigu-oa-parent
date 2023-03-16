@@ -1,6 +1,7 @@
 package com.sanfen.auth.controller;
 
 import com.sanfen.auth.service.SysRoleService;
+import com.sanfen.common.result.Result;
 import com.sanfen.model.system.SysRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,9 +24,9 @@ public class SysRoleController {
     private SysRoleService sysRoleService;
 
     @GetMapping("findAll")
-    public List<SysRole> findAll() {
+    public Result<List<SysRole>> findAll() {
         List<SysRole> roleList = sysRoleService.list();
-        return roleList;
+        return Result.ok(roleList);
     }
 
 }
