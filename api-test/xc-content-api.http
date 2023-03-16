@@ -1,2 +1,6 @@
 ### 查询所有角色
 GET {{local_host}}/admin/system/sysRole/findAll
+
+
+### 条件分页
+GET {{local_host}}/admin/system/sysRole/1/1
